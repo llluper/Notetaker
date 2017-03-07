@@ -17,7 +17,6 @@ public class ErrorController {
 
 		mv.addObject("exception", ex.getLocalizedMessage());
 		mv.addObject("url", request.getRequestURL());
-		System.out.println("\n\n\n\n\n" + ex.getLocalizedMessage() + "\n\n\n\n\n");
 		mv.setViewName("error");
 		return mv;
 	}

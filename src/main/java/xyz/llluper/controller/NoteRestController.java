@@ -16,11 +16,11 @@ public class NoteRestController {
     @Autowired
     private NoteService service;
 
-    //@RequestMapping(value = "/rest/notes", method = RequestMethod.GET)
-    //public List<Note> listAllTodos() {
-    //    List<Note> users = service.readById("admin");
-    //    return users;
-    //}
+    @RequestMapping(value = "/rest/notes", method = RequestMethod.GET)
+    public List<Note> listAllNotes() {
+        List<Note> users = service.readById("admin");
+        return users;
+    }
 
     @RequestMapping(value = "/rest/notes/{id}", method = RequestMethod.GET)
     public Note retrieveNote(@PathVariable("id") String id) {
