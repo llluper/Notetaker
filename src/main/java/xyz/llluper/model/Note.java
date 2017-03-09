@@ -15,8 +15,11 @@ public class Note {
 	private String id;
 
     private String user;
+    @Size(min=1, message="You must fill this field...")
 	private String title;
+    @Size(min=1, message="You must fill this field...")
 	private String body;
+    @Size(min=1, message="You must fill this field...")
     private String label;
 
 	public Note() {}
@@ -32,6 +35,7 @@ public class Note {
 	public String getId() {
 		return id;
 	}
+    
     public void setId(String id) {
         this.id = id;
     }

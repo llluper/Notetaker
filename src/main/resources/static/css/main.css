@@ -2,12 +2,6 @@ body {
     padding-top: 50px;
 }
 
-.note-area {
-    padding: 40px 15px;
-    text-align: left;
-    margin: 0px 10%;
-}
-
 .body {
     box-sizing: border-box;
     cursor: text;
@@ -35,7 +29,7 @@ body {
 .body[contentEditable=true]:empty:not(:focus):before,
 .body:focus {
     content:attr(placeholder);
-} 
+}
 
 .title:empty:before,
 .body:empty:before {
@@ -51,4 +45,8 @@ body {
 
 .navbar .navbar-brand {
     color: #1abc9c;
+}
+
+.down {
+    margin-top: 50px;
 }

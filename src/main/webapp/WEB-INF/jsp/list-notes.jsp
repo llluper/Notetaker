@@ -1,12 +1,11 @@
 <%@ include file="common/header.jspf" %>
 <%@ include file="common/navigation.jspf" %>
 
-	<div class="container">
+	<div class="container down">
 		<table class="table table-striped">
-			<caption>Your notes are</caption>
+			<caption> </caption>
 			<thead>
 				<tr>
-					<th>ID</th>
                     <th>Title</th>
 					<th>Body</th>
 					<th>Label</th>
@@ -17,7 +16,6 @@
 			<tbody>
                 <c:forEach items="${notes}" var="note">
                     <tr>
-                        <td>${note.id}</td>
                         <td>${note.title}</td>
                         <td>${note.body}</td>
 						<td>${note.label}</td>
@@ -30,7 +28,8 @@
 			</tbody>
 		</table>
 		<div>
-			<a class="button" href="/add-note">Add a Note</a>
+			<a class="button" href="/add-note">Add a new note</a>
 		</div>
 	</div>
+
 <%@ include file="common/footer.jspf" %>
